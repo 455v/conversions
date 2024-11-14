@@ -9,24 +9,27 @@
   <body>
     <div class="container">
       <section class="container-type">
-        <div>
-          <input type="text" placeholder="Longitud" />
-          <img
-            src="./icons/ordenar-flechas-par-apuntando-hacia-arriba-y-hacia-abajo.png"
-            alt="Flechas"
-            stroke="white"
-          />
-        </div>
+        <label for="types"></label>
+        <select class="container-type--select" name="types" id="types">
+          <option value="distance">Distancia</option>
+          <option value="time">Tiempo</option>
+        </select>
       </section>
       <section class="container-type--options">
         <div class="type-options-right">
           <input type="number" />
-          <p>metro</p>
+          <label for="types"></label>
+          <select class="container-type--right" name="types" id="types">
+            <option value="meters">Metros</option>
+          </select>
         </div>
         <p class="equality">=</p>
         <div class="type-options-left">
           <input type="number" />
-          <p>Milimetro</p>
+          <label for="types"></label>
+          <select class="container-type--left" name="types" id="types">
+            <option value="millimeters">Milimetros</option>
+          </select>
         </div>
       </section>
       <section class="container-type--forms">
